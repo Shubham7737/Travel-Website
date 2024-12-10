@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>contact web</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        background-color: lightgray;
+      }
+
+      header {
+        display: flex;
+        color: white;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.792);
+      }
+
+      header > h1 {
+        margin-top: 15px;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      nav ul {
+        display: flex;
+        margin: 20px 0px;
+      }
+
+      li a {
+        text-decoration: none;
+        padding: 0px 10px;
+        color: white;
+      }
+
+      /* .main {
+        text-align: start;
+        margin: 2% 10%;
+      } */
+
+      .main > h1 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      .main {
+        display: flex;
+        margin: 0% 10%;
+      }
+
+      .cart {
+        border: 2px solid white;
+        text-align: start;
+        width: 60%;
+        border: none;
+      }
+
+      .cart > img {
+        width: fit-content;
+      }
+
+      .a1 > i {
+        margin: 20px 12px;
+        font-size: 20px;
+        color: orangered;
+      }
+      .a1 > span {
+        font-size: 20px;
+      }
+      .cart1 > h2 {
+        margin: 10px 20px;
+      }
+
+      .cart1 > img {
+        width: 100%;
+        
+      }
+
+      .cart2 > h1 {
+        margin: 5px 10px;
+      }
+      .cart2 > hr {
+        border: 2px solid orangered;
+        margin: 3%;
+      }
+
+      .cart2 > p {
+        font-size: 14px;
+        margin: 4%;
+        line-height: 20px;
+      }
+      .b1 {
+        text-align: start;
+      }
+
+      .b1 > p {
+        margin: 4px;
+        margin-left: 20px;
+        font-size: 20px;
+      }
+      .b1 > input[type="text"] {
+        width: 80%;
+        margin: 1px 20px;
+      }
+      .b1 > textarea {
+        width: 80%;
+        height: 80px;
+        margin: 1px 20px;
+      }
+
+      .c1 {
+        text-align: center;
+        margin: 20px;
+      }
+      button {
+        padding: 8px 20px;
+        background-color: orangered;
+        border: none;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      footer {
+        background-color: rgba(0, 0, 0, 0.858);
+        height: 150px;
+        color: white;
+        text-align: center;
+      }
+
+      footer > i {
+        font-size: 30px;
+        margin: 30px 20px;
+      }
+
+      footer > p {
+        font-size: 14px;
+        word-spacing: 1px;
+      }
+
+      /* responsive */
+
+      
+@media screen and (max-width: 768px) {
+    .main{
+      display: block;
+      text-align: center;
+    }
+
+    .cart2{
+      width: 100%;
+    }
+    .cart{
+      width: 100%;
+      justify-content: center;
+      margin: 20px auto;
+      background-color: whitesmoke;
+      padding: 1rem ;
+    }
+    header{
+      display: flex;
+      flex-direction: column;
+    }
+    header > h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>WT</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <div class="cart cart1">
+        <div class="a1">
+          <i class="fa-solid fa-location-dot loc"></i>
+          <span>LOCATION</span>
+        </div>
+        <div class="a1">
+          <i class="fa-regular fa-envelope email"></i>
+          <span>EMAIL</span>
+        </div>
+        <div class="a1">
+          <i class="fa-solid fa-phone call"></i>
+          <span>CALL</span>
+        </div>
+        <h2>+910101010101</h2>
+        <img src="./img/company-img.jpg" alt="" />
+      </div>
+
+      <div class="cart cart2">
+        <h1>Contact Us</h1>
+        <hr />
+        <p>
+          Let us know your questions, suggestions and concerns by filling out
+          the contact form below.
+        </p>
+        <form action="">
+          <div class="b1">
+            <p>Username*</p>
+            <input type="text" />
+          </div>
+          <div class="b1">
+            <p>Email*</p>
+            <input type="text" />
+          </div>
+          <div class="b1">
+            <p>Phone*</p>
+            <input type="text" />
+          </div>
+          <div class="b1">
+            <p>Message*</p>
+            <textarea name="" id=""></textarea>
+          </div>
+          <div class="c1">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+
+      
+    </div>
+    <footer>
+        <i class="fa-brands fa-facebook-f socialLogo"></i>
+        <i class="fa-brands fa-linkedin socialLogo"></i>
+        <i class="fa-brands fa-instagram socialLogo"></i>
+        <p>World Travel &copy 2024, All Rights Reserved</p>
+      </footer>
+  </body>
+</html>

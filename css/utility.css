@@ -1,0 +1,30 @@
+@media (max-width: 600px) {
+    nav ul.leftUl, nav ul.right {
+      display: block;
+      text-align: center;
+    }
+  
+    .box3, .box5 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .box3 .new, .box5 .cart {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .main {
+      padding: 10px;
+    }
+  
+    #headerimg {
+      width: 100px;
+    }
+  
+    table {
+      font-size: 12px;
+    }
+  }
+  
+  
